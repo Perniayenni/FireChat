@@ -11,9 +11,7 @@ export class ChatComponent implements OnInit {
   mensaje:string= '';
   constructor(public chatSer: ChatService) {
     this.chatSer.cargarMensajes()
-      .subscribe((mensajes:any []) => {
-        console.log(mensajes);
-      });
+      .subscribe();
   }
 
   ngOnInit() {

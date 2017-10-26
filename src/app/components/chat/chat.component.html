@@ -2,19 +2,13 @@
 <hr>
 <div class="app-mensajes" id="app-mensajes">
 
-  <div class="text-right">
+  <div class="text-right" *ngFor="let chat of chatSer.chats">
     <span class="badge badge-primary">Yennifer</span>
     <p>
-      este es un mensaje
+      chat.
     </p>
   </div>
 
-  <div >
-    <span class="badge badge-success">Gabriela</span>
-    <p>
-      este es un mensaje
-    </p>
-  </div>
 </div>
 
 <input type="text" name="mensaje"
