@@ -10,10 +10,10 @@
     <button type="button" (click)="chatSer.logout()" class="btn btn-outline-danger">Salir</button>
   </div>
   <app-login *ngIf="!chatSer.usuario.uid"></app-login>
-  <!--
-    <div class="chat-window">
+
+    <div class="chat-window" *ngIf="chatSer.usuario.uid">
       <app-chat></app-chat>
     </div>
--->
+
 </div>
 
